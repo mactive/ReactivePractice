@@ -1,0 +1,77 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - libwebp (0.6.0):
+    - libwebp/core (= 0.6.0)
+    - libwebp/dec (= 0.6.0)
+    - libwebp/demux (= 0.6.0)
+    - libwebp/dsp (= 0.6.0)
+    - libwebp/enc (= 0.6.0)
+    - libwebp/mux (= 0.6.0)
+    - libwebp/utils (= 0.6.0)
+    - libwebp/webp (= 0.6.0)
+  - libwebp/core (0.6.0):
+    - libwebp/webp
+  - libwebp/dec (0.6.0):
+    - libwebp/core
+  - libwebp/demux (0.6.0):
+    - libwebp/core
+  - libwebp/dsp (0.6.0):
+    - libwebp/core
+  - libwebp/enc (0.6.0):
+    - libwebp/core
+  - libwebp/mux (0.6.0):
+    - libwebp/core
+  - libwebp/utils (0.6.0):
+    - libwebp/core
+  - libwebp/webp (0.6.0)
+  - ReactiveCocoa (2.5.1):
+    - ReactiveCocoa/UI (= 2.5.1)
+  - ReactiveCocoa/Core (2.5.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5.1)
+  - ReactiveCocoa/UI (2.5.1):
+    - ReactiveCocoa/Core
+  - SSZipArchive (0.4.4)
+
+DEPENDENCIES:
+  - AFNetworking (= 2.5.4)
+  - libwebp (= 0.6.0)
+  - ReactiveCocoa (= 2.5.1)
+  - SSZipArchive (= 0.4.4)
+
+SPEC REPOS:
+  "ssh://git@git.sankuai.com/ios/specs.git":
+    - AFNetworking
+    - libwebp
+    - ReactiveCocoa
+    - SSZipArchive
+
+SPEC CHECKSUMS:
+  AFNetworking: e103cd1c9b4ebd6c7107aa4590bfe49b2a7bfab0
+  libwebp: a947601e7c9527067d512cedc1b488a2db449190
+  ReactiveCocoa: f7ae957312da288969ddf75f1f72277b07b7963e
+  SSZipArchive: fd63ab1da170d06f7729f29e294f4fd957b39ef3
+
+PODFILE CHECKSUM: c41eaeebe44ed1f8dcaf6839354e99d07aa21f6a
+
+COCOAPODS: 1.5.3
