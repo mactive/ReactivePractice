@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		04B769D7210D61990004214E /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B769D6210D61990004214E /* Dog.m */; };
 		04B769DA210D61CF0004214E /* Mammal.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B769D9210D61CF0004214E /* Mammal.m */; };
+		04B769E2210DA2E20004214E /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B769E1210DA2E20004214E /* UIViewController+Tracking.m */; };
+		04B769E6210F51710004214E /* Mammal+More.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B769E5210F51710004214E /* Mammal+More.m */; };
+		04B769EA2110935B0004214E /* MammalBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B769E92110935B0004214E /* MammalBlock.m */; };
+		04B769EE2110AA2C0004214E /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B769ED2110AA2C0004214E /* Sort.m */; };
 		04EF6EFE21072FF70062388F /* RACPlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EF6EFD21072FF70062388F /* RACPlay.m */; };
 		C217B1F21EC944C000CD6EB9 /* GCD_target.m in Sources */ = {isa = PBXBuildFile; fileRef = C217B1F11EC944C000CD6EB9 /* GCD_target.m */; };
 		C260E2321D36045600466039 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C260E2311D36045600466039 /* main.m */; };
@@ -38,6 +42,14 @@
 		04B769D8210D61CF0004214E /* Mammal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mammal.h; sourceTree = "<group>"; };
 		04B769D9210D61CF0004214E /* Mammal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mammal.m; sourceTree = "<group>"; };
 		04B769DE210D62850004214E /* MammalProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MammalProtocol.h; sourceTree = "<group>"; };
+		04B769E0210DA2E20004214E /* UIViewController+Tracking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		04B769E1210DA2E20004214E /* UIViewController+Tracking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		04B769E4210F51710004214E /* Mammal+More.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mammal+More.h"; sourceTree = "<group>"; };
+		04B769E5210F51710004214E /* Mammal+More.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Mammal+More.m"; sourceTree = "<group>"; };
+		04B769E82110935B0004214E /* MammalBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MammalBlock.h; sourceTree = "<group>"; };
+		04B769E92110935B0004214E /* MammalBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MammalBlock.m; sourceTree = "<group>"; };
+		04B769EC2110AA2C0004214E /* Sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		04B769ED2110AA2C0004214E /* Sort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sort.m; sourceTree = "<group>"; };
 		04EF6EF921072FDD0062388F /* ReactivePractice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactivePractice-Bridging-Header.h"; sourceTree = "<group>"; };
 		04EF6EFC21072FF70062388F /* RACPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACPlay.h; sourceTree = "<group>"; };
 		04EF6EFD21072FF70062388F /* RACPlay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACPlay.m; sourceTree = "<group>"; };
@@ -94,6 +106,42 @@
 			name = oop;
 			sourceTree = "<group>";
 		};
+		04B769DF210DA2BF0004214E /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				04B769E0210DA2E20004214E /* UIViewController+Tracking.h */,
+				04B769E1210DA2E20004214E /* UIViewController+Tracking.m */,
+			);
+			name = Runtime;
+			sourceTree = "<group>";
+		};
+		04B769E3210F50D20004214E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				04B769E4210F51710004214E /* Mammal+More.h */,
+				04B769E5210F51710004214E /* Mammal+More.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		04B769E7211093500004214E /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				04B769E82110935B0004214E /* MammalBlock.h */,
+				04B769E92110935B0004214E /* MammalBlock.m */,
+			);
+			name = Block;
+			sourceTree = "<group>";
+		};
+		04B769EB2110A9F20004214E /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				04B769EC2110AA2C0004214E /* Sort.h */,
+				04B769ED2110AA2C0004214E /* Sort.m */,
+			);
+			name = Algorithm;
+			sourceTree = "<group>";
+		};
 		4E3EE86F9E4ED61B1169C675 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +182,10 @@
 		C260E22F1D36045600466039 /* ReactivePractice */ = {
 			isa = PBXGroup;
 			children = (
+				04B769EB2110A9F20004214E /* Algorithm */,
+				04B769E7211093500004214E /* Block */,
+				04B769E3210F50D20004214E /* Category */,
+				04B769DF210DA2BF0004214E /* Runtime */,
 				04B769D4210D617A0004214E /* oop */,
 				C260E2331D36045600466039 /* AppDelegate.h */,
 				C260E2341D36045600466039 /* AppDelegate.m */,
@@ -298,10 +350,14 @@
 				04B769DA210D61CF0004214E /* Mammal.m in Sources */,
 				04EF6EFE21072FF70062388F /* RACPlay.m in Sources */,
 				C260E2381D36045600466039 /* ViewController.m in Sources */,
+				04B769E6210F51710004214E /* Mammal+More.m in Sources */,
+				04B769EA2110935B0004214E /* MammalBlock.m in Sources */,
 				C294D5D91F45710A0002DB0B /* OpeartionQueue.m in Sources */,
 				C260E2351D36045600466039 /* AppDelegate.m in Sources */,
 				04B769D7210D61990004214E /* Dog.m in Sources */,
 				C260E2321D36045600466039 /* main.m in Sources */,
+				04B769EE2110AA2C0004214E /* Sort.m in Sources */,
+				04B769E2210DA2E20004214E /* UIViewController+Tracking.m in Sources */,
 				C217B1F21EC944C000CD6EB9 /* GCD_target.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -44,34 +44,43 @@ PODS:
   - libwebp/utils (0.6.0):
     - libwebp/core
   - libwebp/webp (0.6.0)
-  - ReactiveCocoa (2.5.1):
-    - ReactiveCocoa/UI (= 2.5.1)
-  - ReactiveCocoa/Core (2.5.1):
+  - ReactiveCocoa (4.0.0):
+    - ReactiveCocoa/UI (= 4.0.0)
+    - Result (~> 1.0.1)
+  - ReactiveCocoa/Core (4.0.0):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.5.1)
-  - ReactiveCocoa/UI (2.5.1):
+    - Result (~> 1.0.1)
+  - ReactiveCocoa/no-arc (4.0.0):
+    - Result (~> 1.0.1)
+  - ReactiveCocoa/UI (4.0.0):
     - ReactiveCocoa/Core
-  - SSZipArchive (0.4.4)
+    - Result (~> 1.0.1)
+  - Result (1.0.2)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
 
 DEPENDENCIES:
   - AFNetworking (= 2.5.4)
   - libwebp (= 0.6.0)
-  - ReactiveCocoa (= 2.5.1)
-  - SSZipArchive (= 0.4.4)
+  - ReactiveCocoa (= 4.0.0)
+  - SDWebImage (= 4.4.2)
 
 SPEC REPOS:
-  "ssh://git@git.sankuai.com/ios/specs.git":
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - libwebp
     - ReactiveCocoa
-    - SSZipArchive
+    - Result
+    - SDWebImage
 
 SPEC CHECKSUMS:
-  AFNetworking: e103cd1c9b4ebd6c7107aa4590bfe49b2a7bfab0
-  libwebp: a947601e7c9527067d512cedc1b488a2db449190
-  ReactiveCocoa: f7ae957312da288969ddf75f1f72277b07b7963e
-  SSZipArchive: fd63ab1da170d06f7729f29e294f4fd957b39ef3
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  libwebp: 1d5a07c2eb97f9c31bd5f154bb82efc0ea67c6a2
+  ReactiveCocoa: 69be555be30674b07a86b60a91b855063841acc0
+  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
 
-PODFILE CHECKSUM: c41eaeebe44ed1f8dcaf6839354e99d07aa21f6a
+PODFILE CHECKSUM: ff3c642880a165b8d15b92ba83b619af535bc46d
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0

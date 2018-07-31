@@ -12,6 +12,9 @@
 #import "OpeartionQueue.h"
 #import "RACPlay.h"
 #import "Mammal.h"
+#import "Mammal+More.h"
+#import "MammalBlock.h"
+#import "Sort.h"
 
 #import <Objc/runtime.h>
 #import <Objc/message.h>
@@ -48,6 +51,10 @@
   
   // OP3
   [self testDog];
+  [self testRuntime];
+  [self testBlock];
+  
+  Sort* sort = [[Sort alloc] init];
 }
 
 - (void) testDog
@@ -55,6 +62,12 @@
   Mammal *dog = [[Mammal alloc] initWithType:@"Dog" andAge:@12];
   dog.numPerBrith = 4;
   [dog brith];
+  [dog eat];
+  dog.name = @"Max";
+  NSLog(@"%@",dog.name);
+  
+  // category 方法
+  [Mammal legacy];
   
   // 调用私有方法
   SEL speedFunc = NSSelectorFromString(@"configSpeed:");
@@ -63,16 +76,27 @@
   // 调用类方法1
   Class mammalClass = [Mammal class];
   NSString * definition = [mammalClass performSelector:@selector(definition)];
-  NSLog(definition);
+  NSLog(@"%@", definition);
 
   // 调用类方法2
   objc_msgSend(mammalClass, @selector(definition));
-  NSLog(definition);
+  NSLog(@"%@", definition);
   
   // [dog fly];
   // [dog fly] 还有下面另外一种调用方法
   [dog performSelector:@selector(fly)];
-  
+}
+
+- (void)testRuntime {
+  Mammal *cls = [Mammal class];
+  NSLog(@"instance size: %zu", class_getInstanceSize(cls));
+}
+
+- (void)testBlock
+{
+  MammalBlock *block = [[MammalBlock alloc] init];
+  [block test];
+  [block weakTest];
 }
 
 -(void)testFuncC
@@ -82,7 +106,6 @@
     [context evaluateScript:@"var names = ['Grace', 'Ada', 'Margaret']"];
     [context evaluateScript:@"var triple = function(value) { return value * 3 }"];
     JSValue *tripleNum = [context evaluateScript:@"triple(num)"];
-    
 }
 
 - (void)testFuncA{
@@ -116,6 +139,12 @@
     });
 
 }
+
+//- (void)viewWillAppear:(BOOL)animated
+//{
+//  [super viewWillAppear:animated];
+//  NSLog(@"original viewWillApprear");
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
